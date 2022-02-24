@@ -75,20 +75,20 @@ function copyText2() {
 // copy button 3 password
 function copyText3() {
     
-    navigator.clipboard.writeText(password2)
+    navigator.clipboard.writeText(password3)
     
-    var tooltip2 = document.getElementById("myTooltip3")
-    tooltip2.innerHTML = "Copied: " + password3
+    var tooltip = document.getElementById("myTooltip3")
+    tooltip.innerHTML = "Copied: " + password3
 
 }
 
 // copy button 4 password
 function copyText4() {
     
-    navigator.clipboard.writeText(password2)
+    navigator.clipboard.writeText(password4)
     
-    var tooltip2 = document.getElementById("myTooltip4")
-    tooltip2.innerHTML = "Copied: " + password4
+    var tooltip = document.getElementById("myTooltip4")
+    tooltip.innerHTML = "Copied: " + password4
 
 }
 
