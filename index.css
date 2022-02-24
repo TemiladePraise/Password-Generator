@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
+    font-family: karla, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
+}
+
+h1{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;  
+    color: #2B283A;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #6B7280;
+    margin: 10px 0 20px 0;
+    padding: 0;
+
+}
+
+hr{
+    height:1px;
+    border-width:0;
+    color:#D5D4D8;
+    background-color:#D5D4D8;
+}
+.mainArea{
+    max-width: 550px;
+    max-height: 550px;
+    margin: 64px auto;
+    background: #ECFDF5;
+    padding: 100px 52px 54px 52px;
+}
+
+.h1Color{
+    color: #10B981;
+}
+
+.genButton{
+    background-color: #10B981;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.passBtn{
+    width: 259px;
+    height: 39px;
+    background: #273549;
+    border: none;
+    color: #10B981;
+    border-radius: 6px;
+
+
+}
+
+.passArea {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.passRow{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #34D399;
+  color: #1C1C1C;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-left: -70px;
+  font-weight: bold;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #34D399 transparent transparent transparent;
+  color: #1C1C1C;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    margin: 0;
+    padding: 0;
+    height: 28px;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  .sliderValue{
+      margin-top: 0; 
+      font-size: 15px;
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #34D399; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #34D399; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  #passText1,#passText3,#passText2,#passText4{
+    margin: 3px 6px ;
+}
+#sliderOut{
+    color: #10B981;
+    font-weight: bold;
+}

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Password Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="mainArea">
+            <h1><strong> Generate a <br><span class="h1Color">random password</span></strong></h1>
+            <p>Never use an insecure password again.</p>
+            
+            <form id="form1">
+                <label for="passLen">password Length:</label>
+                <div class="slidecontainer">
+                    <input type="range" value="5" min="5" max="25" id="passLen" name="pass Length" class="slider"><br><br> <!-- password length selector -->
+                </div>           
+            </form>
+            <p class="sliderValue">Value: <span id="sliderOut"></span></p>
+            
+            <button onclick="generatePassword(),displayPassword()" class="genButton"> <svg width="15" height="15" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M29.6451 0.123719C31.1318 0.474093 32.1429 1.50489 32.1429 2.67031V16.0209L46.4286 16.0209C47.7603 16.0209 48.9813 16.5749 49.5963 17.4579C50.2113 18.341 50.1181 19.4066 49.3544 20.2223L24.3544 46.9235C23.4605 47.8782 21.8416 48.2892 20.3549 47.9388C18.8682 47.5885 17.8571 46.5577 17.8571 45.3922L17.8571 32.0416H3.57144C2.23974 32.0416 1.01865 31.4877 0.403658 30.6046C-0.211334 29.7215 -0.118068 28.6559 0.64561 27.8403L25.6456 1.1391C26.5395 0.184345 28.1584 -0.226655 29.6451 0.123719Z" fill="white"/>
+            </svg>
+        
+
+            Generate Passwords</button> <!-- generate passwords button -->
+          <!-- / main area -->
+            <hr>
+            
+            <div class="passArea">  <!-- password buttons area -->
+            
+                <div class = "passRow"> <!-- password buttons row 1 -->
+                    
+                    <div class="tooltip"> <!-- copy to clipboard tooltip -->
+                    <button id="passText1" class="passBtn" onclick="copyText1()">
+                        
+                    </button>
+                    </div> <!-- / tooltip -->
+                    
+                    <div class="tooltip"> <!-- copy to clipboard tooltip -->
+                        <button id="passText2" class="passBtn" onclick="copyText2()">
+                            
+                        </button>
+                    </div> <!-- / tooltip -->
+                </div> <!-- / passArea -->
+                
+                <div class = "passRow"> <!-- password buttons row 2 -->
+                
+                    <div class="tooltip"> <!-- copy to clipboard tooltip -->
+                        <button id="passText3" class="passBtn" onclick="copyText3()">
+                            
+                        </button>
+                    </div> <!-- / tooltip -->
+                    
+                    <div class="tooltip"> <!-- copy to clipboard tooltip -->
+                        <button id="passText4" class="passBtn" onclick="copyText4()">
+                            
+                        </button>
+                    </div> <!-- / tooltip -->
+                </div> <!-- / passRow -->
+                
+            </div> <!-- / passArea -->
+        </div> <!-- / mainArea -->
+        <script src="index.js"></script>
+        
+        
+    </body>
+</html>
